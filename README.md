@@ -28,5 +28,16 @@ assessment reports (Jotform evaluation → automated scoring → benchmarked das
 ```bash
 npm install
 npm run dev
-npm run build   # production build to dist/
+npm run build   # production build to dist/ (GitHub Pages subpath base)
+```
+
+## Docker
+
+Container serves the site at root via nginx (built with `BASE_PATH=/`):
+
+```bash
+docker compose up -d --build   # http://localhost:8088
+# or
+docker build -t premier-fitness-proposal .
+docker run -d -p 8088:80 premier-fitness-proposal
 ```

@@ -11,7 +11,7 @@
         <div><span>2</span>Lock scope &amp; kickoff</div>
         <div><span>3</span>Rebuilt form live in 2 weeks</div>
       </div>
-      <a class="btn btn-red" href="mailto:userdeveloper554@gmail.com?subject=NFAC%20Automation%20Proposal%20—%20Let's%20Talk">Schedule the Call</a>
+      <a class="btn btn-red" href="mailto:gabrielalvin.jobs@gmail.com?subject=NFAC%20Automation%20Proposal%20—%20Let's%20Talk">Schedule the Call</a>
     </div>
   </section>
 </template>

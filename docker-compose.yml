@@ -1,0 +1,7 @@
+services:
+  proposal:
+    build: .
+    image: premier-fitness-proposal:latest
+    ports:
+      - "8088:80"
+    restart: unless-stopped
