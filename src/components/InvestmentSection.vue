@@ -32,7 +32,8 @@
             Every phase ends with your review, and hours/scope adjust from that feedback.
             Calendar weeks can shift because they depend on review cycles — but every phase
             kickoff commits to a <em>specific delivery timeline for its output</em>, so you
-            always know exactly what lands and when.
+            always know exactly what lands and when. Work is billed up to a
+            <em>maximum of 40 hrs/week</em>.
           </div>
         </div>
         <div class="card incl">
