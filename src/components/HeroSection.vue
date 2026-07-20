@@ -10,6 +10,7 @@
       </div>
       <div class="nav-links">
         <a href="#demo">Live Demo</a>
+        <a href="#analytics">Analytics</a>
         <a href="#scoring">Scoring</a>
         <a href="#architecture">Approach</a>
         <a href="#timeline">Timeline</a>

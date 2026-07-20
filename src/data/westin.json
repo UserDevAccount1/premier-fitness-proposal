@@ -5,7 +5,7 @@
   "assessmentId": "NFAC-2026-001",
   "assessmentDate": "May 2026",
   "propertyType": "Hotel",
-  "nfacScore": 67,
+  "nfacScore": 67.5,
   "grade": "D+",
   "tier": "COMPETITIVE",
   "riskRating": "MODERATE",
@@ -14,12 +14,36 @@
   "benchmarkPercentile": 38,
   "benchmarkMarket": "DFW Market",
   "categories": [
-    { "key": "safety", "label": "Safety & Risk", "score": 62 },
-    { "key": "asset", "label": "Asset Condition", "score": 68 },
-    { "key": "ux", "label": "User Experience", "score": 78 },
-    { "key": "utilization", "label": "Utilization", "score": 56 },
-    { "key": "coverage", "label": "Exercise Coverage", "score": 63 },
-    { "key": "sanitation", "label": "Sanitation Readiness", "score": 80 }
+    {
+      "key": "safety",
+      "label": "Safety & Risk",
+      "score": 62
+    },
+    {
+      "key": "asset",
+      "label": "Asset Condition",
+      "score": 68
+    },
+    {
+      "key": "ux",
+      "label": "User Experience",
+      "score": 80
+    },
+    {
+      "key": "utilization",
+      "label": "Utilization",
+      "score": 55
+    },
+    {
+      "key": "coverage",
+      "label": "Exercise Coverage",
+      "score": 60
+    },
+    {
+      "key": "sanitation",
+      "label": "Sanitation Readiness",
+      "score": 80
+    }
   ],
   "priorities": [
     "Address critical cardio equipment safety issues",
@@ -40,17 +64,203 @@
     "readinessLabel": "FAIR",
     "deferredCapital": "$12,000 – $18,000",
     "lifecycle": [
-      { "label": "Excellent (0–3 yrs)", "pct": 22, "color": "#3d8b4f" },
-      { "label": "Good (4–7 yrs)", "pct": 38, "color": "#2f6fb3" },
-      { "label": "Fair (8–10 yrs)", "pct": 24, "color": "#e8a020" },
-      { "label": "Poor (10+ yrs)", "pct": 16, "color": "#c8102e" }
+      {
+        "label": "Excellent (0–3 yrs)",
+        "pct": 22,
+        "color": "#3d8b4f"
+      },
+      {
+        "label": "Good (4–7 yrs)",
+        "pct": 38,
+        "color": "#2f6fb3"
+      },
+      {
+        "label": "Fair (8–10 yrs)",
+        "pct": 24,
+        "color": "#e8a020"
+      },
+      {
+        "label": "Poor (10+ yrs)",
+        "pct": 16,
+        "color": "#c8102e"
+      }
     ],
     "conditionByCategory": [
-      { "label": "Treadmills", "score": 58 },
-      { "label": "Ellipticals", "score": 65 },
-      { "label": "Bikes", "score": 70 },
-      { "label": "Strength", "score": 72 },
-      { "label": "Free Weights", "score": 80 }
+      {
+        "label": "Treadmills",
+        "score": 58
+      },
+      {
+        "label": "Ellipticals",
+        "score": 65
+      },
+      {
+        "label": "Bikes",
+        "score": 70
+      },
+      {
+        "label": "Strength",
+        "score": 72
+      },
+      {
+        "label": "Free Weights",
+        "score": 80
+      }
+    ]
+  },
+  "ownership": {
+    "summary": "The fitness amenity at The Westin Irving Convention Center at Las Colinas is clean, well-maintained, and well-presented. However, several cardio assets are showing significant signs of wear that create safety liability and reduce reliability. Proactive investment in key areas will protect guests, extend asset life, and strengthen overall amenity performance.",
+    "tiles": [
+      {
+        "key": "risk",
+        "label": "Risk Exposure",
+        "value": "MODERATE",
+        "tone": "red",
+        "note": "Safety issues identified create potential liability exposure if not addressed."
+      },
+      {
+        "key": "capital",
+        "label": "Capital Exposure",
+        "value": "$12,000 – $18,000",
+        "tone": "blue",
+        "note": "Estimated investment needed over the next 12–24 months."
+      },
+      {
+        "key": "guest",
+        "label": "Guest Experience",
+        "value": "ABOVE AVERAGE",
+        "tone": "blue",
+        "note": "Clean, well-presented facility with opportunities to enhance equipment experience."
+      },
+      {
+        "key": "occupancy",
+        "label": "Occupancy Impact",
+        "value": "POSITIVE",
+        "tone": "green",
+        "note": "Maintaining and enhancing this amenity supports guest satisfaction and repeat stays."
+      },
+      {
+        "key": "asset",
+        "label": "Asset Preservation",
+        "value": "AT RISK",
+        "tone": "gray",
+        "note": "Aging equipment and deferred maintenance may accelerate replacement costs."
+      }
+    ],
+    "meanings": [
+      "Reduces risk and protects guests",
+      "Improves operational efficiency",
+      "Supports guest satisfaction & reviews",
+      "Protects asset value over the long term"
+    ]
+  },
+  "metricBreakdown": [
+    {
+      "category": "Asset Condition",
+      "total": 17,
+      "max": 25,
+      "weighted": 68,
+      "metrics": [
+        {
+          "label": "Operational Readiness",
+          "score": 4
+        },
+        {
+          "label": "Cosmetic Condition",
+          "score": 3
+        },
+        {
+          "label": "Equipment Lifecycle",
+          "score": 3
+        },
+        {
+          "label": "Preventative Maintenance",
+          "score": 3
+        },
+        {
+          "label": "Asset Stewardship",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "category": "User Experience",
+      "total": 16,
+      "max": 20,
+      "weighted": 80,
+      "metrics": [
+        {
+          "label": "Cleanliness & Care",
+          "score": 4
+        },
+        {
+          "label": "Comfort & Environment",
+          "score": 4
+        },
+        {
+          "label": "Layout & Accessibility",
+          "score": 4
+        },
+        {
+          "label": "Aesthetic Appeal",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "category": "Utilization",
+      "total": 11,
+      "max": 20,
+      "weighted": 55,
+      "metrics": [
+        {
+          "label": "Wear Pattern Analysis",
+          "score": 3
+        },
+        {
+          "label": "Equipment Selection",
+          "score": 3
+        },
+        {
+          "label": "Space Utilization",
+          "score": 3
+        },
+        {
+          "label": "Throughput Capacity",
+          "score": 2
+        }
+      ]
+    }
+  ],
+  "safetyMatrix": {
+    "score": 62,
+    "status": "Urgent Risk",
+    "criticalHazards": 2,
+    "rows": [
+      {
+        "hazard": "High-Speed Equipment",
+        "status": "Pass"
+      },
+      {
+        "hazard": "Cable Systems",
+        "status": "Critical"
+      },
+      {
+        "hazard": "Structural Integrity",
+        "status": "Pass"
+      },
+      {
+        "hazard": "Electrical Safety",
+        "status": "Pass"
+      },
+      {
+        "hazard": "Fall Hazards",
+        "status": "Major"
+      },
+      {
+        "hazard": "User Controls",
+        "status": "Pass"
+      }
     ]
   },
   "safetyFindings": [

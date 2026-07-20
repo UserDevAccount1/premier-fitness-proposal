@@ -157,6 +157,66 @@ const ordinal = (n) => {
           </div>
         </div>
 
+        <!-- Ownership impact summary -->
+        <div class="asset-head">Ownership Impact Summary</div>
+        <div class="own-tiles">
+          <div v-for="t in p.ownership.tiles" :key="t.key" class="own-tile" :class="'tone-' + t.tone">
+            <span class="own-label">{{ t.label }}</span>
+            <strong class="own-value">{{ t.value }}</strong>
+            <p>{{ t.note }}</p>
+          </div>
+        </div>
+        <div class="exec-summary">
+          <span>Executive Summary</span>
+          <p>{{ p.ownership.summary }}</p>
+        </div>
+        <div class="meanings">
+          <div v-for="m in p.ownership.meanings" :key="m">✓ {{ m }}</div>
+        </div>
+
+        <!-- Score composition analytics -->
+        <div class="asset-head">Score Composition — How the Grade Was Built</div>
+        <div class="comp-grid">
+          <div v-for="mb in p.metricBreakdown" :key="mb.category" class="mini card-flat">
+            <div class="comp-head">
+              <h4>{{ mb.category }}</h4>
+              <span class="comp-total">{{ mb.total }}/{{ mb.max }} → <strong>{{ mb.weighted }}/100</strong></span>
+            </div>
+            <div class="m-bars">
+              <div v-for="m in mb.metrics" :key="m.label" class="m-row">
+                <span class="m-label">{{ m.label }}</span>
+                <div class="m-track">
+                  <div
+                    class="m-fill"
+                    :style="{
+                      width: (m.score / 5) * 100 + '%',
+                      background: m.score >= 5 ? 'var(--green)' : m.score >= 4 ? 'var(--blue)' : m.score >= 3 ? 'var(--amber)' : 'var(--red)',
+                    }"
+                  ></div>
+                </div>
+                <span class="m-val">{{ m.score }}/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="mini card-flat matrix">
+            <div class="comp-head">
+              <h4>NFAC Safety Matrix</h4>
+              <span class="comp-total">Critical hazards: <strong style="color: var(--red)">{{ p.safetyMatrix.criticalHazards }}</strong></span>
+            </div>
+            <table class="mx-table">
+              <tbody>
+                <tr v-for="r in p.safetyMatrix.rows" :key="r.hazard">
+                  <td>{{ r.hazard }}</td>
+                  <td>
+                    <span class="mx-status" :class="'mx-' + r.status.toLowerCase()">{{ r.status }}</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="mx-note">Safety Status: <strong>{{ p.safetyMatrix.status }}</strong> · Safety Score {{ p.safetyMatrix.score }}/100</p>
+          </div>
+        </div>
+
         <!-- Asset condition analysis -->
         <div class="asset-head">Asset Condition Analysis</div>
         <div class="asset-grid">
@@ -420,6 +480,106 @@ const ordinal = (n) => {
 .bar-fill { height: 100%; border-radius: 999px; transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
 .bar-val { font-size: 0.8rem; color: var(--navy); font-weight: 600; text-align: right; }
 
+.own-tiles {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  padding: 22px 26px 0;
+}
+.own-tile {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 14px;
+}
+.own-label {
+  font-family: var(--font-cond);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 9px 6px;
+  margin-bottom: 12px;
+}
+.tone-red .own-label { background: var(--red); }
+.tone-blue .own-label { background: var(--blue); }
+.tone-green .own-label { background: var(--green); }
+.tone-gray .own-label { background: var(--muted); }
+.own-value { font-family: var(--font-cond); font-weight: 800; font-size: 1.05rem; color: var(--navy); padding: 0 8px; }
+.tone-red .own-value { color: var(--red); }
+.tone-green .own-value { color: var(--green); }
+.own-tile p { font-size: 0.74rem; color: var(--muted); padding: 6px 12px 0; }
+.exec-summary {
+  margin: 18px 26px 0;
+  background: var(--navy-3);
+  border-radius: 10px;
+  color: #fff;
+  padding: 18px 22px;
+}
+.exec-summary span {
+  font-family: var(--font-cond);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  opacity: 0.75;
+}
+.exec-summary p { font-size: 0.92rem; margin-top: 6px; color: rgba(255,255,255,0.9); }
+.meanings {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 16px 26px 24px;
+}
+.meanings div {
+  font-size: 0.84rem;
+  color: var(--navy);
+  font-weight: 600;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.comp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  padding: 22px 26px;
+}
+.comp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.comp-total { font-size: 0.82rem; color: var(--muted); }
+.comp-total strong { color: var(--navy); }
+.m-bars { display: flex; flex-direction: column; gap: 10px; }
+.m-row { display: grid; grid-template-columns: 170px 1fr 40px; align-items: center; gap: 10px; }
+.m-label { font-size: 0.82rem; color: var(--muted); }
+.m-track { height: 9px; background: var(--line); border-radius: 999px; overflow: hidden; }
+.m-fill { height: 100%; border-radius: 999px; transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
+.m-val { font-size: 0.78rem; color: var(--navy); font-weight: 600; text-align: right; }
+.mx-table { width: 100%; border-collapse: collapse; }
+.mx-table td { padding: 7px 4px; border-bottom: 1px solid var(--line); font-size: 0.86rem; color: var(--ink); }
+.mx-status {
+  display: inline-block;
+  font-family: var(--font-cond);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.mx-pass { background: var(--green); }
+.mx-major { background: var(--amber); }
+.mx-critical { background: var(--red); }
+.mx-note { font-size: 0.82rem; color: var(--muted); margin-top: 10px; }
+.mx-note strong { color: var(--red); }
+
 .findings { padding: 22px 26px 28px; overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; min-width: 640px; }
 th {
@@ -449,6 +609,10 @@ td p { color: var(--muted); font-size: 0.85rem; margin-top: 3px; }
 
 @media (max-width: 960px) {
   .exec-grid, .asset-grid { grid-template-columns: 1fr; }
+  .own-tiles { grid-template-columns: repeat(2, 1fr); }
+  .meanings { grid-template-columns: repeat(2, 1fr); }
+  .comp-grid { grid-template-columns: 1fr; }
+  .m-row { grid-template-columns: 130px 1fr 40px; }
   .cat-row { grid-template-columns: repeat(3, 1fr); row-gap: 20px; }
   .two-col { grid-template-columns: 1fr; }
 }

@@ -53,6 +53,65 @@
       { "label": "Free Weights", "score": 85 }
     ]
   },
+  "ownership": {
+    "summary": "The fitness amenity at Broadstone Archive is clean, well-presented, and offers complete exercise coverage. However, treadmill belt lubrication failures and a non-responsive console create immediate safety liability exposure. Targeted maintenance now protects residents and preserves an otherwise strong amenity.",
+    "tiles": [
+      { "key": "risk", "label": "Risk Exposure", "value": "ELEVATED", "tone": "red", "note": "Multiple critical findings create liability exposure if not addressed." },
+      { "key": "capital", "label": "Capital Exposure", "value": "$6,000 – $9,000", "tone": "blue", "note": "Estimated investment needed over the next 12–24 months." },
+      { "key": "guest", "label": "Resident Experience", "value": "EXCELLENT", "tone": "blue", "note": "Clean, well-presented amenity that supports leasing decisions." },
+      { "key": "occupancy", "label": "Occupancy Impact", "value": "POSITIVE", "tone": "green", "note": "Amenity strengthens resident satisfaction and renewal rates." },
+      { "key": "asset", "label": "Asset Preservation", "value": "STABLE", "tone": "gray", "note": "Younger portfolio; proactive maintenance keeps replacement costs low." }
+    ],
+    "meanings": [
+      "Reduces risk and protects residents",
+      "Improves operational efficiency",
+      "Supports resident satisfaction & reviews",
+      "Protects asset value over the long term"
+    ]
+  },
+  "metricBreakdown": [
+    {
+      "category": "Asset Condition", "total": 17, "max": 25, "weighted": 68,
+      "metrics": [
+        { "label": "Operational Readiness", "score": 4 },
+        { "label": "Cosmetic Condition", "score": 3 },
+        { "label": "Equipment Lifecycle", "score": 3 },
+        { "label": "Preventative Maintenance", "score": 3 },
+        { "label": "Asset Stewardship", "score": 4 }
+      ]
+    },
+    {
+      "category": "User Experience", "total": 18, "max": 20, "weighted": 90,
+      "metrics": [
+        { "label": "Cleanliness & Care", "score": 5 },
+        { "label": "Comfort & Environment", "score": 4 },
+        { "label": "Layout & Accessibility", "score": 4 },
+        { "label": "Aesthetic Appeal", "score": 5 }
+      ]
+    },
+    {
+      "category": "Utilization", "total": 19, "max": 20, "weighted": 95,
+      "metrics": [
+        { "label": "Wear Pattern Analysis", "score": 5 },
+        { "label": "Equipment Selection", "score": 5 },
+        { "label": "Space Utilization", "score": 4 },
+        { "label": "Throughput Capacity", "score": 5 }
+      ]
+    }
+  ],
+  "safetyMatrix": {
+    "score": 49,
+    "status": "Immediate Risk",
+    "criticalHazards": 2,
+    "rows": [
+      { "hazard": "High-Speed Equipment", "status": "Critical" },
+      { "hazard": "Cable Systems", "status": "Pass" },
+      { "hazard": "Structural Integrity", "status": "Pass" },
+      { "hazard": "Electrical Safety", "status": "Pass" },
+      { "hazard": "Fall Hazards", "status": "Major" },
+      { "hazard": "User Controls", "status": "Critical" }
+    ]
+  },
   "safetyFindings": [
     {
       "finding": "Treadmill Belt — No Lubrication",

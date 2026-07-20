@@ -2,6 +2,7 @@
 import HeroSection from './components/HeroSection.vue'
 import UnderstandingSection from './components/UnderstandingSection.vue'
 import DashboardDemo from './components/DashboardDemo.vue'
+import AnalyticsSection from './components/AnalyticsSection.vue'
 import ScoringModel from './components/ScoringModel.vue'
 import ArchitectureFlow from './components/ArchitectureFlow.vue'
 import TimelineSection from './components/TimelineSection.vue'
@@ -13,6 +14,7 @@ import NextSteps from './components/NextSteps.vue'
   <HeroSection />
   <UnderstandingSection />
   <DashboardDemo />
+  <AnalyticsSection />
   <ScoringModel />
   <ArchitectureFlow />
   <TimelineSection />
