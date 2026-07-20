@@ -1,0 +1,79 @@
+{
+  "id": "broadstone",
+  "name": "Broadstone Archive",
+  "location": "Dallas–Fort Worth, TX",
+  "assessmentId": "NFAC-2026-002",
+  "assessmentDate": "June 2026",
+  "propertyType": "Apartment Community",
+  "nfacScore": 83.67,
+  "grade": "B-",
+  "tier": "COMPETITIVE",
+  "riskRating": "ELEVATED",
+  "riskNote": "Urgent safety findings present",
+  "ownershipImpact": 7.5,
+  "benchmarkPercentile": 82,
+  "benchmarkMarket": "DFW Market",
+  "categories": [
+    { "key": "safety", "label": "Safety & Risk", "score": 49 },
+    { "key": "asset", "label": "Asset Condition", "score": 68 },
+    { "key": "ux", "label": "User Experience", "score": 90 },
+    { "key": "utilization", "label": "Utilization", "score": 95 },
+    { "key": "coverage", "label": "Exercise Coverage", "score": 100 },
+    { "key": "sanitation", "label": "Sanitation Readiness", "score": 100 }
+  ],
+  "priorities": [
+    "Restore treadmill belt lubrication to eliminate slip risk",
+    "Replace non-responsive Octane bike console battery",
+    "Repair defective treadmill incline/decline controls",
+    "Address strength cable wear before steel exposure",
+    "Re-secure loose accessories and dumbbell saddles"
+  ],
+  "strengths": [
+    "Sanitation stations fully stocked and well placed",
+    "Complete exercise modality coverage (10/10)",
+    "Excellent space utilization and traffic flow",
+    "Clean, well-presented amenity overall"
+  ],
+  "assetAnalysis": {
+    "averageAssetAge": 4.2,
+    "readinessScore": 74,
+    "readinessLabel": "FAIR",
+    "deferredCapital": "$6,000 – $9,000",
+    "lifecycle": [
+      { "label": "Excellent (0–3 yrs)", "pct": 35, "color": "#3d8b4f" },
+      { "label": "Good (4–7 yrs)", "pct": 40, "color": "#2f6fb3" },
+      { "label": "Fair (8–10 yrs)", "pct": 18, "color": "#e8a020" },
+      { "label": "Poor (10+ yrs)", "pct": 7, "color": "#c8102e" }
+    ],
+    "conditionByCategory": [
+      { "label": "Treadmills", "score": 55 },
+      { "label": "Ellipticals", "score": 72 },
+      { "label": "Bikes", "score": 60 },
+      { "label": "Strength", "score": 75 },
+      { "label": "Free Weights", "score": 85 }
+    ]
+  },
+  "safetyFindings": [
+    {
+      "finding": "Treadmill Belt — No Lubrication",
+      "detail": "Running belts void of lubrication; belt hesitates under load.",
+      "severity": "URGENT",
+      "risk": "Increased risk of slip, fall and injury.",
+      "resolve": "0–30 days"
+    },
+    {
+      "finding": "Non-Responsive Console",
+      "detail": "Octane Fitness bike console completely non-responsive; internal battery replacement likely.",
+      "severity": "MAJOR",
+      "risk": "Equipment unusable; e-stop functionality unverifiable.",
+      "resolve": "0–30 days"
+    },
+    {
+      "finding": "Defective Incline Controls",
+      "detail": "Treadmill incline/decline handle controls work only intermittently; heart-rate sensors broken.",
+      "severity": "MAJOR",
+      "risk": "Unexpected elevation changes mid-workout.",
+      "resolve": "30–60 days"
+    }
+  ]
+}

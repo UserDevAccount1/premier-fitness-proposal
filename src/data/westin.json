@@ -1,0 +1,72 @@
+{
+  "id": "westin",
+  "name": "The Westin Irving Convention Center",
+  "location": "Las Colinas, TX",
+  "assessmentId": "NFAC-2026-001",
+  "assessmentDate": "May 2026",
+  "propertyType": "Hotel",
+  "nfacScore": 67,
+  "grade": "D+",
+  "tier": "COMPETITIVE",
+  "riskRating": "MODERATE",
+  "riskNote": "With elevated risk",
+  "ownershipImpact": 6.5,
+  "benchmarkPercentile": 38,
+  "benchmarkMarket": "DFW Market",
+  "categories": [
+    { "key": "safety", "label": "Safety & Risk", "score": 62 },
+    { "key": "asset", "label": "Asset Condition", "score": 68 },
+    { "key": "ux", "label": "User Experience", "score": 78 },
+    { "key": "utilization", "label": "Utilization", "score": 56 },
+    { "key": "coverage", "label": "Exercise Coverage", "score": 63 },
+    { "key": "sanitation", "label": "Sanitation Readiness", "score": 80 }
+  ],
+  "priorities": [
+    "Address critical cardio equipment safety issues",
+    "Plan for aging cardio replacement cycle",
+    "Resolve cable machine damage and wear",
+    "Improve equipment uptime and reliability",
+    "Enhance free weight area functionality"
+  ],
+  "strengths": [
+    "Sanitation standards are excellent",
+    "Facility is clean and well maintained",
+    "Amenity presentation is above average",
+    "Diverse mix of cardio equipment"
+  ],
+  "assetAnalysis": {
+    "averageAssetAge": 6.8,
+    "readinessScore": 68,
+    "readinessLabel": "FAIR",
+    "deferredCapital": "$12,000 – $18,000",
+    "lifecycle": [
+      { "label": "Excellent (0–3 yrs)", "pct": 22, "color": "#3d8b4f" },
+      { "label": "Good (4–7 yrs)", "pct": 38, "color": "#2f6fb3" },
+      { "label": "Fair (8–10 yrs)", "pct": 24, "color": "#e8a020" },
+      { "label": "Poor (10+ yrs)", "pct": 16, "color": "#c8102e" }
+    ],
+    "conditionByCategory": [
+      { "label": "Treadmills", "score": 58 },
+      { "label": "Ellipticals", "score": 65 },
+      { "label": "Bikes", "score": 70 },
+      { "label": "Strength", "score": 72 },
+      { "label": "Free Weights", "score": 80 }
+    ]
+  },
+  "safetyFindings": [
+    {
+      "finding": "Treadmill Belt Wear",
+      "detail": "Multiple treadmills with significant belt wear, fraying edges and exposed layers.",
+      "severity": "CRITICAL",
+      "risk": "Increased risk of slip, fall and injury.",
+      "resolve": "0–30 days"
+    },
+    {
+      "finding": "Cable Machine Damage",
+      "detail": "Torn cable sheath exposing internal cable on multiple cable crossover units.",
+      "severity": "CRITICAL",
+      "risk": "Potential cable failure could cause injury.",
+      "resolve": "0–30 days"
+    }
+  ]
+}
