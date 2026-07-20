@@ -21,7 +21,7 @@ const steps = [
   {
     n: '04',
     title: 'Benchmark Database',
-    tool: 'PostgreSQL database',
+    tool: 'Supabase (Postgres)',
     desc: 'Every evaluation stored. Each new property is ranked against your full history — overall and per category, filtered by property type and market. Your data moat grows with every visit.',
   },
   {

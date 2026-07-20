@@ -52,12 +52,12 @@ const tools = [
     cost: '~$5–10/mo',
   },
   {
-    name: 'PostgreSQL',
-    icon: 'PG',
-    color: '#336791',
+    name: 'Supabase',
+    icon: 'SB',
+    color: '#3ecf8e',
     role: 'Benchmark database',
-    desc: 'Every evaluation stored and indexed. Percentile rankings by property type and market, growing with every visit.',
-    cost: 'Included on VPS',
+    desc: 'Managed Postgres storing every evaluation — percentile rankings by property type and market, instant APIs, auth-ready if a client portal comes later.',
+    cost: 'Free tier – $25/mo',
   },
   {
     name: 'Vue 3 + Vite',
