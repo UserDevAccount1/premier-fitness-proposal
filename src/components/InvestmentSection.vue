@@ -11,7 +11,7 @@
       <div class="grid">
         <div class="card rate">
           <span class="rate-label">Rate</span>
-          <div class="rate-num">$15–20<small>/hr</small></div>
+          <div class="rate-num">$12–20<small>/hr</small></div>
           <div class="avail">
             <strong>Up to 40 hrs/week</strong>
             <span>maximum weekly workload</span>
@@ -25,7 +25,7 @@
             <div><span>Phase 2 — Scoring engine</span><strong>20–30 hrs</strong></div>
             <div><span>Phase 3 — Automation &amp; reports</span><strong>25–35 hrs</strong></div>
             <div><span>Phase 4 — Benchmarking &amp; handoff</span><strong>15–25 hrs</strong></div>
-            <div class="total"><span>Total build estimate</span><strong>80–120 hrs · $1,200–$2,400</strong></div>
+            <div class="total"><span>Total build estimate</span><strong>80–120 hrs · $960–$2,400</strong></div>
           </div>
           <div class="review-note">
             <strong>Review &amp; adjust — built in.</strong>
@@ -47,7 +47,7 @@
           <h3 class="ongoing">Ongoing Maintenance Fee</h3>
           <div class="maint">
             <div class="maint-row"><span>Monthly retainer (up to 10 hrs)</span><strong>$150–$200/mo</strong></div>
-            <div class="maint-row"><span>Extra work beyond retainer</span><strong>$15–20/hr</strong></div>
+            <div class="maint-row"><span>Extra work beyond retainer</span><strong>$12–20/hr</strong></div>
             <div class="maint-row"><span>Runtime tooling (Jotform + VPS)</span><strong>~$10–50/mo</strong></div>
           </div>
           <p>
