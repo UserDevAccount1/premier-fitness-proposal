@@ -63,7 +63,7 @@ const phases = [
       <p class="review-banner">
         <strong>Everything is reviewed &amp; adjusted.</strong> Week ranges are indicative — each phase
         closes with your review, and the plan adjusts from that feedback. What stays fixed: every phase
-        kickoff commits to a specific delivery timeline for its output, at a minimum of 40 hrs/week of dedicated work.
+        kickoff commits to a specific delivery timeline for its output, working up to a maximum of 40 hrs/week.
       </p>
 
       <div class="phases">

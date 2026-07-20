@@ -13,8 +13,8 @@
           <span class="rate-label">Rate</span>
           <div class="rate-num">$15–20<small>/hr</small></div>
           <div class="avail">
-            <strong>40+ hrs/week</strong>
-            <span>minimum dedicated work commitment</span>
+            <strong>Up to 40 hrs/week</strong>
+            <span>maximum weekly workload</span>
           </div>
           <span class="rate-note">Weekly time reports · weekly review checkpoints</span>
         </div>
