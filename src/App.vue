@@ -83,7 +83,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
     </header>
 
     <div ref="viewport" class="deck-viewport">
-      <Transition :name="transitionName" mode="out-in">
+      <Transition :name="transitionName" mode="out-in" :duration="{ enter: 300, leave: 200 }">
         <div class="slide" :key="active">
           <component :is="slides[active].comp" />
         </div>

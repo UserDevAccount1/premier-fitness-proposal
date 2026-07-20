@@ -13,10 +13,10 @@
           <span class="rate-label">Rate</span>
           <div class="rate-num">$15–20<small>/hr</small></div>
           <div class="avail">
-            <strong>40 hrs/week</strong>
-            <span>dedicated availability</span>
+            <strong>40+ hrs/week</strong>
+            <span>minimum dedicated work commitment</span>
           </div>
-          <span class="rate-note">Weekly time reports · no minimums · stop anytime</span>
+          <span class="rate-note">Weekly time reports · weekly review checkpoints</span>
         </div>
         <div class="card est">
           <h3>Build — Estimated Effort</h3>
@@ -27,7 +27,13 @@
             <div><span>Phase 4 — Benchmarking &amp; handoff</span><strong>15–25 hrs</strong></div>
             <div class="total"><span>Total build estimate</span><strong>80–120 hrs · $1,200–$2,400</strong></div>
           </div>
-          <p class="est-note">At 40 hrs/week, the full build fits comfortably in the 4–6 week timeline.</p>
+          <div class="review-note">
+            <strong>Review &amp; adjust — built in.</strong>
+            Every phase ends with your review, and hours/scope adjust from that feedback.
+            Calendar weeks can shift because they depend on review cycles — but every phase
+            kickoff commits to a <em>specific delivery timeline for its output</em>, so you
+            always know exactly what lands and when.
+          </div>
         </div>
         <div class="card incl">
           <h3>Included in the Build</h3>
@@ -110,7 +116,17 @@
 .rows .total { border-bottom: none; padding-top: 14px; }
 .rows .total span { color: var(--navy); font-weight: 700; }
 .rows .total strong { color: var(--red); }
-.est-note { font-size: 0.85rem; color: var(--muted); margin-top: 10px; }
+.review-note {
+  margin-top: 14px;
+  font-size: 0.86rem;
+  color: var(--muted);
+  background: var(--bg);
+  border-left: 4px solid var(--red);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+}
+.review-note strong { color: var(--navy); }
+.review-note em { color: var(--red); font-style: normal; font-weight: 700; }
 .incl ul { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
 .incl li { padding-left: 22px; position: relative; font-size: 0.92rem; color: var(--ink); }
 .incl li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 800; }

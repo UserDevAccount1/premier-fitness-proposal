@@ -60,6 +60,11 @@ const phases = [
         Phased so you see working output early: the rebuilt form ships in week 2, the first
         auto-generated report by week 4. Each phase ends with something you can put in front of a prospect.
       </p>
+      <p class="review-banner">
+        <strong>Everything is reviewed &amp; adjusted.</strong> Week ranges are indicative — each phase
+        closes with your review, and the plan adjusts from that feedback. What stays fixed: every phase
+        kickoff commits to a specific delivery timeline for its output, at a minimum of 40 hrs/week of dedicated work.
+      </p>
 
       <div class="phases">
         <div v-for="(p, i) in phases" :key="p.phase" class="card phase">
@@ -81,6 +86,17 @@ const phases = [
 
 <style scoped>
 .timeline { background: #fff; }
+.review-banner {
+  background: var(--bg);
+  border-left: 4px solid var(--red);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  font-size: 0.92rem;
+  color: var(--muted);
+  max-width: 860px;
+  margin: -20px 0 34px;
+}
+.review-banner strong { color: var(--navy); }
 .phases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .phase { padding: 24px; display: flex; flex-direction: column; }
 .ph-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
