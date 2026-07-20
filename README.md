@@ -9,7 +9,19 @@ assessment reports (Jotform evaluation → automated scoring → benchmarked das
 
 - Vue 3 + Vite, no UI framework — custom SVG gauges/donuts
 - Sample data in `src/data/*.json` (Broadstone from the NFAC scoring spreadsheet, Westin from the target design)
-- Deployed to GitHub Pages via Actions on push to `main`
+- Deployed to GitHub Pages from the `gh-pages` branch (branch/legacy build)
+
+> **Note:** The Actions workflow (`.github/workflows/deploy.yml`) is disabled because the
+> GitHub account is currently billing-locked, which blocks all Actions runners. Once billing
+> is resolved at github.com/settings/billing, re-enable it (`gh workflow enable "Deploy to
+> GitHub Pages"`) and switch Pages back to the workflow build. Until then, redeploy manually:
+>
+> ```bash
+> npm run build
+> cd dist && git init -b gh-pages && git add -A && git commit -m "deploy" \
+>   && git push -f https://github.com/UserDevAccount1/premier-fitness-proposal.git gh-pages
+> cd .. && rm -rf dist/.git
+> ```
 
 ## Develop
 
