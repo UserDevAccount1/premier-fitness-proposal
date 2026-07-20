@@ -1,6 +1,11 @@
+<script setup>
+import { inject } from 'vue'
+const deck = inject('deck', null)
+</script>
+
 <template>
   <header class="hero">
-    <nav class="nav wrap">
+    <div class="nav wrap">
       <div class="brand">
         <div class="shield">NFAC</div>
         <div class="brand-text">
@@ -8,15 +13,7 @@
           <span>Powered by Premier Fitness</span>
         </div>
       </div>
-      <div class="nav-links">
-        <a href="#demo">Live Demo</a>
-        <a href="#analytics">Analytics</a>
-        <a href="#scoring">Scoring</a>
-        <a href="#architecture">Approach</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#investment">Investment</a>
-      </div>
-    </nav>
+    </div>
 
     <div class="hero-body wrap">
       <span class="tag">Project Proposal</span>
@@ -26,8 +23,8 @@
         benchmarked, presentation-quality reports — in minutes, not hours of Canva work.
       </p>
       <div class="hero-cta">
-        <a href="#demo" class="btn btn-red">See the Live Dashboard</a>
-        <a href="#architecture" class="btn btn-ghost">How It Works</a>
+        <button class="btn btn-red" @click="deck && deck.goToId('demo')">See the Live Dashboard</button>
+        <button class="btn btn-ghost" @click="deck && deck.goToId('architecture')">How It Works</button>
       </div>
       <div class="hero-stats">
         <div><strong>15–20 min</strong><span>manual report today</span></div>
@@ -67,18 +64,7 @@
 .brand-text { display: flex; flex-direction: column; line-height: 1.25; }
 .brand-text strong { font-family: var(--font-cond); letter-spacing: 0.05em; text-transform: uppercase; }
 .brand-text span { font-size: 0.72rem; opacity: 0.7; letter-spacing: 0.12em; text-transform: uppercase; }
-.nav-links { display: flex; gap: 26px; }
-.nav-links a {
-  color: rgba(255, 255, 255, 0.82);
-  text-decoration: none;
-  font-family: var(--font-cond);
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  font-size: 0.92rem;
-}
-.nav-links a:hover { color: #fff; }
-.hero-body { padding-top: 74px; }
+.hero-body { padding-top: 54px; }
 .tag {
   font-family: var(--font-cond);
   font-weight: 700;
@@ -120,7 +106,6 @@ h1 em { color: #ff9daa; font-style: normal; }
 .hero-stats strong { font-family: var(--font-cond); font-size: 1.6rem; font-weight: 800; }
 .hero-stats span { font-size: 0.8rem; opacity: 0.75; }
 @media (max-width: 760px) {
-  .nav-links { display: none; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
