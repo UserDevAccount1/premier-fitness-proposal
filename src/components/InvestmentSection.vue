@@ -16,6 +16,11 @@
             <strong>Up to 40 hrs/week</strong>
             <span>maximum weekly workload</span>
           </div>
+          <div class="monthly">
+            <span class="monthly-label">Full-time monthly</span>
+            <strong class="monthly-num">$1,920–$2,080<small>/mo</small></strong>
+            <span class="monthly-note">at $12/hr base, up to 40 hrs/week</span>
+          </div>
           <span class="rate-note">Weekly time reports · weekly review checkpoints</span>
         </div>
         <div class="card est">
@@ -44,15 +49,15 @@
             <li>2 weeks post-launch support</li>
             <li>You own everything — accounts, code, data</li>
           </ul>
-          <h3 class="ongoing">Ongoing Maintenance Fee</h3>
+          <h3 class="ongoing">Ongoing — After Launch</h3>
           <div class="maint">
-            <div class="maint-row"><span>Monthly retainer (up to 10 hrs)</span><strong>$150–$200/mo</strong></div>
-            <div class="maint-row"><span>Extra work beyond retainer</span><strong>$12–20/hr</strong></div>
+            <div class="maint-row"><span>Continued full-time engagement</span><strong>$1,920–$2,080/mo</strong></div>
+            <div class="maint-row"><span>Light maintenance retainer (up to 10 hrs)</span><strong>$150–$200/mo</strong></div>
             <div class="maint-row"><span>Runtime tooling (Jotform + VPS)</span><strong>~$10–50/mo</strong></div>
           </div>
           <p>
-            Covers framework updates, report tweaks, monitoring and fixes — so the system
-            keeps pace as your evaluation campaign scales.
+            Two ways to continue: keep me on full-time to build new report types and scale the
+            campaign, or a light retainer for framework updates, tweaks and monitoring only.
           </p>
         </div>
       </div>
@@ -94,6 +99,25 @@
 }
 .avail strong { font-family: var(--font-cond); font-weight: 800; font-size: 1.3rem; }
 .avail span { font-size: 0.78rem; opacity: 0.75; }
+.monthly {
+  background: rgba(200, 16, 46, 0.18);
+  border: 1px solid rgba(255, 157, 170, 0.45);
+  border-radius: 8px;
+  padding: 8px 18px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.monthly-label {
+  font-family: var(--font-cond);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  opacity: 0.8;
+}
+.monthly-num { font-family: var(--font-cond); font-weight: 800; font-size: 1.55rem; line-height: 1.1; }
+.monthly-num small { font-size: 0.85rem; opacity: 0.75; font-weight: 600; }
+.monthly-note { font-size: 0.72rem; opacity: 0.7; }
 .rate-note { font-size: 0.85rem; opacity: 0.75; max-width: 220px; }
 .est h3, .incl h3 {
   font-family: var(--font-cond);
